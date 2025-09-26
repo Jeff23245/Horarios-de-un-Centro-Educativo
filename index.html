@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Horarios - INFRAMEN</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+<header>
+  <img src="Img/logo IN.png" alt="Logo INFRAMEN" class="logo">
+  <h1>Sistema de Horarios - INFRAMEN</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#avisos">Avisos</a>
+    <a href="#calendario">Calendario</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+  <section id="inicio" class="seccion">
+    <h2>Bienvenido</h2>
+    <p>Este es el sistema de horarios del INSTITUTO NACIONAL GENERAL FRANCISCO MENENDEZ (INFRAMEN).</p>
+  </section>
+
+ <select id="grupo">
+  <option>Primero Año</option>
+  <option>Segundo Año</option>
+  <option>Tercer Año</option>
+</select>
+
+<table border="1">
+  <tbody id="tabla-horario"></tbody>
+</table>
+
+
+    <button id="descargar">Descargar PDF</button>
+  </section>
+
+  <section id="avisos" class="seccion">
+    <h2>Avisos Importantes</h2>
+    <ul>
+      <li>📌 Entrega de notas: 25 de septiembre</li>
+      <li>📌 Inicio de vacaciones: 10 de diciembre</li>
+      <li>📌 Matrícula 2026: a partir del 5 de enero</li>
+    </ul>
+  </section>
+
+  <section id="calendario" class="seccion">
+    <h2>Calendario Académico</h2>
+    <img src="Img/calendario academico.jpg" alt="Calendario académico" width="600">
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 INFRAMEN - Sistema de Horarios</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
