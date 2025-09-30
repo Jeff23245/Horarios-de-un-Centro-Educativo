@@ -1,74 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Horarios - INFRAMEN</title>
-  <link rel="stylesheet" href="Css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida - INFRAMEN</title>
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-<header>
-  <img src="Img/logo IN.png" alt="Logo INFRAMEN" class="logo">
-  <h1>Sistema de Horarios - INFRAMEN</h1>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#horarios">Horarios</a>
-    <a href="#avisos">Avisos</a>
-    <a href="#calendario">Calendario</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
 
-  <section id="inicio" class="seccion">
-    <h2>Bienvenido</h2>
-    <p>Este es el sistema de horarios del INSTITUTO NACIONAL GENERAL FRANCISCO MENENDEZ (INFRAMEN).</p>
-  </section>
-
- <select id="grupo">
-  <option>Primero Año</option>
-  <option>Segundo Año</option>
-  <option>Tercer Año</option>
-</select>
-
-<table border="1">
-  <tbody id="tabla-horario"></tbody>
-</table>
-
-
-    <button id="descargar">Descargar PDF</button>
-  </section>
-
-  <section id="avisos" class="seccion">
-    <h2>Avisos Importantes</h2>
-    <ul>
-      <li>📌 Entrega de notas: 25 de septiembre</li>
-      <li>📌 Inicio de vacaciones: 10 de diciembre</li>
-      <li>📌 Matrícula 2026: a partir del 5 de enero</li>
+  <nav class="navbar">
+    <div class="logo">Mi Centro Educativo</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Horarios.html">Horarios</a></li>
+      <li><a href="Avisos.html">Aviso</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="calendario" class="seccion">
-    <h2>Calendario Académico</h2>
-    <img src="Img/calendario academico.jpg" alt="Calendario académico" width="600">
-  </section>
+    <main>
+        <section class="bienvenida">
+            <img src="/Img/logo IN.png" alt="Logo INFRAMEN" class="logo">
+            <h2>Bienvenido</h2>
+            <p>
+                Este es el sistema de horarios del 
+                <strong>INSTITUTO NACIONAL GENERAL FRANCISCO MENÉNDEZ (INFRAMEN)</strong>.  
+                Aquí podrás consultar los horarios de clases, avisos importantes y actividades destacadas.
+            </p>
+        </section>
 
-  <section id="contacto" class="seccion">
-    <h2>Contacto</h2>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
-      
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" required></textarea>
-      
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+        <section class="informacion">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                El INFRAMEN es una institución educativa reconocida por su excelencia académica en El Salvador. 
+                Con más de 100 años de historia, se ha dedicado a la formación de jóvenes en áreas académicas, 
+                técnicas y culturales. Nuestro compromiso es brindar una educación de calidad que prepare a los 
+                estudiantes para enfrentar los retos del futuro.
+            </p>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 INFRAMEN - Sistema de Horarios</p>
-  </footer>
+        <section class="imagenes">
+            <h2>Galería</h2>
+            <div class="galeria">
+                <img src="/Img/fto3.jpeg" alt="Imagen 1">
+                <img src="/Img/fto2.jpeg" alt="Imagen 2">
+                <img src="/Img/fto4.webp" alt="Imagen 3">
+            </div>
+        </section>
+    </main>
 
-  <script src="/js/app.js"></script>
 </body>
 </html>
